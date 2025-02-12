@@ -1,0 +1,37 @@
+{% comment %} {% assign hello_var = 'Hello World from variable!' %} declared with empty lines {% endcomment %}
+
+{%- assign hello_var = 'Hello World from variable!' -%}
+
+<p>{{- hello_var -}}</p>
+
+{% comment %} Data Types {% endcomment %}
+
+{% comment %} String {% endcomment %}
+{% assign string = "It's a string" %}
+{{ string }}
+<br>
+
+{% comment %} Number {% endcomment %}
+{% assign number = 123 %}
+{% assign number_floating = 123.45 %}
+{{ number }}
+{{ number_floating }}
+<br>
+
+{% comment %} Boolean {% endcomment %}
+{% assign boolean = true %}
+{{ boolean }}
+<br>
+
+{% comment %} Null {% endcomment %}
+{% assign nill = null %}
+{{ nill }}
+<br>
+
+{% comment %} Control Structures {% endcomment %}
+
+{% if undefined_var == nill %}
+  <p>undefined_var {{ undefined_var }} is null!</p>
+{% endif %}
+
+{% comment %} Data Structure {% endcomment %}
